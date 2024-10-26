@@ -1,0 +1,69 @@
+22.10.2024, 0:02:59 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:03:04 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:03:55 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:08:12 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:08:50 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:09:34 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:10:03 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:10:51 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:11:21 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:11:55 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:13:09 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:13:24 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:15:11 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:16:02 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 0:16:46 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 9:20:41 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 9:22:46 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 9:23:16 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 9:25:03 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 9:26:23 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 9:30:51 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 9:33:32 - INFO - Server is ready on http://127.0.0.1:3030/
+22.10.2024, 9:33:43 - INFO - Server is ready on http://127.0.0.1:3030/
+24.10.2024, 20:27:36 - INFO - Server is ready on http://127.0.0.1:3030/
+26.10.2024, 13:04:28 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:04:39 - INFO - Bug NcTIN removed
+26.10.2024, 13:04:57 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:07:02 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:07:17 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:07:28 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:15:52 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:18:52 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:19:29 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:19:38 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:25:15 - DEBUG - req.query | {"title":"d","severity":"NaN"}
+26.10.2024, 13:25:26 - DEBUG - req.query | {"title":"a","severity":"200"}
+26.10.2024, 13:28:41 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:28:50 - DEBUG - req.query | {"title":"d","severity":"7","_id":"nRxSF"}
+26.10.2024, 13:29:01 - DEBUG - req.query | {"title":"Infinite Loop Detected","description":"problem when clicking Save","severity":"2","_id":"1NF1N1T3"}
+26.10.2024, 13:29:57 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"0","_id":"abc123"}
+26.10.2024, 13:30:03 - DEBUG - req.query | {"title":"Unexpected Response","description":"problem when clicking Save","severity":"0","_id":"G0053"}
+26.10.2024, 13:31:04 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:31:24 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:31:30 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"2","_id":"abc123"}
+26.10.2024, 13:31:39 - INFO - Server listening on port http://127.0.0.1:3030/
+26.10.2024, 13:32:44 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"3","_id":"abc123"}
+26.10.2024, 13:33:03 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"3","_id":"abc123"}
+26.10.2024, 13:33:05 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"4","_id":"abc123"}
+26.10.2024, 13:33:40 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"5","_id":"abc123"}
+26.10.2024, 13:33:51 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"6","_id":"abc123"}
+26.10.2024, 13:35:17 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"5","_id":"abc123"}
+26.10.2024, 13:35:52 - DEBUG - req.query | {"title":"a","severity":"7"}
+26.10.2024, 13:37:45 - INFO - Bug nRxSF removed
+26.10.2024, 13:38:14 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"6","_id":"abc123"}
+26.10.2024, 13:38:46 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"7","_id":"abc123"}
+26.10.2024, 13:38:50 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"8","_id":"abc123"}
+26.10.2024, 13:38:52 - DEBUG - req.query | {"title":"Cannot save a new car","description":"problem when clicking Save","severity":"10","_id":"abc123"}
+26.10.2024, 13:39:12 - DEBUG - req.query | {"title":"a","severity":"12"}
+26.10.2024, 13:42:47 - ERROR - Cannot get bug | Cannot find bug
+26.10.2024, 13:44:00 - DEBUG - req.query | {"title":"hello","description":"well","severity":"5"}
+26.10.2024, 13:44:08 - DEBUG - req.query | {"title":"a","severity":"2","_id":"YZzXc"}
+26.10.2024, 13:44:18 - DEBUG - req.query | {"title":"well","description":"there ","severity":"10"}
+26.10.2024, 13:45:02 - INFO - Bug 56frl removed
+26.10.2024, 13:45:03 - INFO - Bug MgVkT removed
+26.10.2024, 13:45:04 - INFO - Bug YZzXc removed
+26.10.2024, 13:46:13 - DEBUG - req.query | {"title":"Infinite Loop Detected","description":"problem when clicking Save","severity":"0","_id":"1NF1N1T3"}
+26.10.2024, 13:47:19 - DEBUG - req.query | {"title":"a","description":"a","severity":"5"}
+26.10.2024, 13:54:20 - DEBUG - req.query | {"title":"Infinite Loop Detected","description":"problem when clicking Save","severity":"8","_id":"1NF1N1T3"}
+26.10.2024, 13:54:27 - DEBUG - req.query | {"title":"Infinite Loop Detected","description":"problem when clicking Save","severity":"1","_id":"1NF1N1T3"}

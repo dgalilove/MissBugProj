@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { utilService } from './util.service.js'
+import { loggerService } from './logger.service.js'
 
 
 const bugs = utilService.readJsonFile('data/bug.json')
@@ -27,27 +28,29 @@ function remove(bugId) {
     return _saveBugsToFile()
 }
 
-function save(bugToSave) {
-    if (bugToSave._id) {
-        const bugIdx = bugs.findIndex(bug => bug._id === bugToSave._id)
-        bugs[bugIdx] = bugToSave
+function save(bug) {
+    if (bug._id) {
+        const idx = bugs.findIndex(currBug => currBug._id === bug._id)
+        bugs[idx] = { ...bugs[idx], ...bug }
     } else {
-        bugToSave._id = utilService.makeId()
-        bugs.unshift(bugToSave)
+        bug._id = utilService.makeId()
+        bug.createdAt = Date.now()
+        bugs.unshift(bug)
     }
-
-    return _saveBugsToFile().then(() => bugToSave)
+    return _saveBugsToFile().then(() => bug)
 }
 
 
 function _saveBugsToFile() {
     return new Promise((resolve, reject) => {
-        const data = JSON.stringify(bugs, null, 4)
+        const data = JSON.stringify(bugs, null, 2)
         fs.writeFile('data/bug.json', data, (err) => {
             if (err) {
-                return reject(err)
+                loggerService.error('Cannot write to bugs file', err)
+                return reject(err);
             }
+            console.log('The file was saved!');
             resolve()
-        })
+        });
     })
 }
