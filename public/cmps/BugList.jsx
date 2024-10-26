@@ -2,7 +2,7 @@ const { Link } = ReactRouterDOM
 
 import { BugPreview } from './BugPreview.jsx'
 
-export function BugList({ bugs, onRemoveBug, onEditBug }) {
+export function BugList({ bugs, onRemoveBug }) {
 
     if (!bugs) return <div>Loading...</div>
     return (
