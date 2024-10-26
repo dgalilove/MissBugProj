@@ -90,7 +90,7 @@ export function BugIndex() {
       })
   }
 
-  const { txt, severity, label } = filterBy
+  const { txt, severity, label ,sortBy ,sortDir } = filterBy
   if (!bugs) return <div>loading...</div>
 
   return (
@@ -98,7 +98,7 @@ export function BugIndex() {
       <section className="info-actions">
         <BugFilter
           onSetFilter={debouncedFilterBy.current}
-          filterBy={{ txt, severity, label }}
+          filterBy={{ txt, severity, label, sortBy, sortDir }}
         />
         <Link to="/bug/edit">Add Bug</Link>
       </section>

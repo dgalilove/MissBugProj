@@ -17,7 +17,7 @@ export function BugFilter({ filterBy, onSetFilter }) {
     setFilterByToEdit((prevFilterBy) => ({ ...prevFilterBy, [field]: value }))
   }
 
-  const { txt, severity , label} = filterByToEdit
+  const { txt, severity, label , sortBy, sortDir } = filterByToEdit
   return (
     <section className="bug-filter full main-layout">
       <form onSubmit={onSubmitFilter}>
@@ -49,6 +49,30 @@ export function BugFilter({ filterBy, onSetFilter }) {
           onChange={handleChange}
           placeholder="By label"
         />
+
+        <label htmlFor="sortBy">Sort By:</label>
+        <select
+          name="sortBy"
+          id="sortBy"
+          value={sortBy}
+          onChange={handleChange}
+        >
+          <option value="">Select Field</option>
+          <option value="title">Title</option>
+          <option value="severity">Severity</option>
+          <option value="createdAt">Creation Date</option>
+        </select>
+
+        <label htmlFor="sortDir">Sort Direction:</label>
+        <select
+          name="sortDir"
+          id="sortDir"
+          value={sortDir}
+          onChange={handleChange}
+        >
+          <option value="1">Ascending</option>
+          <option value="-1">Descending</option>
+        </select>
 
         <button>Filter Bugs</button>
       </form>

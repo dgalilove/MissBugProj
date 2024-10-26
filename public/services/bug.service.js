@@ -14,24 +14,10 @@ export const bugService = {
 }
 
 
-function query(filterBy = getDefaultFilter()) {
-    return axios.get(BASE_URL)
-        .then(res => res.data)
-        .then(bugs => {
-            if (filterBy.txt) {
-                const regExp = new RegExp(filterBy.txt, 'i')
-                bugs = bugs.filter(bug => regExp.test(bug.title) || regExp.test(bug.description))
-            }
 
-            if (filterBy.severity) {
-                bugs = bugs.filter(bug => bug.severity >= filterBy.severity)
-            }
-            if (filterBy.label) {
-                const regExp = new RegExp(filterBy.label, 'i')
-                bugs = bugs.filter(bug => bug.labels.some(label => regExp.test(label)))
-            }
-            return bugs
-        })
+function query(filterBy = getDefaultFilter()) {
+    return axios.get(BASE_URL , {params : filterBy})
+        .then(res => res.data)
 }
 function getById(bugId) {
     return axios.get(BASE_URL + bugId)
@@ -69,7 +55,7 @@ function getEmptyBug() {
 }
 
 function getDefaultFilter() {
-    return { txt: '', severity: '' , label:'' }
+    return { txt: '', severity: '' , sortBy:'' }
 }
 
 

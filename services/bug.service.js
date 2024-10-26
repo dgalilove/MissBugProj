@@ -12,27 +12,32 @@ export const bugService = {
   save,
 }
 
-function query(filterBy) {
-  return Promise.resolve(bugs).then((bugs) => {
-    if (filterBy.txt) {
-      const regex = new RegExp(filterBy.txt, "i")
-      bugs = bugs.filter((bug) => regex.test(bug.txt))
+function query(filterBy ) {
+  return Promise.resolve(bugs)
+    .then((bugs) => {
+      if (filterBy.txt) {
+        const regExp = new RegExp(filterBy.txt, 'i')
+        bugs = bugs.filter(bug => regExp.test(bug.title) || regExp.test(bug.description))
     }
+
     if (filterBy.severity) {
-      bugs = bugs.filter((bug) => bug.severity >= filterBy.severity)
+        bugs = bugs.filter(bug => bug.severity >= filterBy.severity)
     }
-    if (filterBy.desc) {
-      const regex = new RegExp(filterBy.desc, "i")
-      bugs = bugs.filter((bug) => regex.test(bug.desc))
+    if (filterBy.label) {
+        const regExp = new RegExp(filterBy.label, 'i')
+        bugs = bugs.filter(bug => bug.labels.some(label => regExp.test(label)))
     }
-    if (filterBy.labels) {
-        const regex = new RegExp(filterBy.labels, "i")
-        filteredBugs = filteredBugs.filter((bug) => bug.labels.some(label => regex.test(label)))
-      }
     if (filterBy.pageIdx !== undefined) {
-      const startIdx = +filterBy.pageIdx * PAGE_SIZE
-      bugs = bugs.slice(startIdx, startIdx + PAGE_SIZE)
-    }
+        const startIdx = +filterBy.pageIdx * PAGE_SIZE
+        bugs = bugs.slice(startIdx, startIdx + PAGE_SIZE)
+      }
+      if (filterBy.sortBy) {
+        bugs.sort((a, b) => {
+          if (a[filterBy.sortBy] < b[filterBy.sortBy]) return -1 * filterBy.sortDir
+          if (a[filterBy.sortBy] > b[filterBy.sortBy]) return 1 * filterBy.sortDir
+          return 0
+        })
+      }
     return bugs
   })
 }
